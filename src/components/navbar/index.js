@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaBars } from 'react-icons/fa';
 import { 
   Nav, 
   NavbarContainer, 
@@ -10,15 +11,14 @@ import {
   NavBtn,
   NavBtnLink 
 } from './NavbarElements.js';
-import { FaBars } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to='/'>cpalmer-atx</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
