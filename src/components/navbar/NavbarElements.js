@@ -5,7 +5,7 @@ import { Link as LinkS } from 'react-scroll';
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
-  // margin-top: -80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +86,7 @@ export const NavLinks = styled(LinkS)`
   }
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     color: #01bf71;
   }
 `;
@@ -110,12 +110,12 @@ export const NavBtnLink = styled(LinkR)`
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background: #fff;
     color: #010606;
   }
-`
+`;
