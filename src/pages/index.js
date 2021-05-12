@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../components/navbar';
-import NavMenu from '../components/navMenu';
+// import NavMenu from '../components/navMenu';
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <>
-      <NavMenu open={open} toggle={toggle} />
+      {/* <NavMenu open={open} toggle={toggle} /> */}
       <Navbar toggle={toggle} />
     </>
   )
