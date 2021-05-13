@@ -86,12 +86,14 @@ export const NavMenuRoute = styled(LinkRouter)`
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.4s ease-in-out;
+  transition: 0.4s all ease-in-out;
 
   &:hover {
-    transition: 0.4s ease-in-out;
-    color: ${Colors.WHITE};
-    transform: translate(0px, -1px);
+    
+    transition: all 0.2s;
+    color: ${Colors.SECONDARY_BG};
+    border-left: 3px solid ${Colors.SECONDARY_BG};
+    border-right: 3px solid ${Colors.SECONDARY_BG};
   }
 `;
 
