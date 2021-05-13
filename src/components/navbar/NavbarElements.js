@@ -107,7 +107,7 @@ export const ResumeBtnLink = styled(LinkRouter)`
   background: ${Colors.WARM_ACCENT};
   white-space: nowrap;
   padding: 10px 22px;
-  color: ${Colors.SECONDARY_BG};
+  color: ${Colors.BLACK};
   font-size: 18px;
   font-family: Lekton;
   outline: none;
@@ -118,8 +118,8 @@ export const ResumeBtnLink = styled(LinkRouter)`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transition: all 0.3s ease-in-out;
-    padding: 12px 24px;
+    transition: all 0.1s ease-in-out;
+    padding: 12px 22px;
     // background: ${Colors.COOL_ACCENT};
     color: ${Colors.WHITE};
     font-weight: bold;
