@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import TextLoop from 'react-text-loop';
 import video from '../../videos/video.mp4';
 import Button from './ButtonElement.js';
 import {
@@ -8,7 +9,6 @@ import {
   JumbotronContent,
   JumboH1,
   JumboLoop,
-  TextLoop,
   JumboBtnWrapper,
   Mail,
   User
