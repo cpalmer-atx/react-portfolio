@@ -34,6 +34,7 @@ export const NavLogo = styled(LinkRouter)`
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
+  font-family: Lekton;
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -74,6 +75,7 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkScroll)`
   color: ${Colors.SECONDARY_BG};
+  font-family: Lekton;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -83,11 +85,12 @@ export const NavLinks = styled(LinkScroll)`
   
   &:active {
     border-bottom: 7px solid ${Colors.WARM_ACCENT};
+    font-weight: bold;
   }
 
   &:hover {
     transition: all 0.1s ease-in-out;
-    color: ${Colors.WHITE};
+    color: ${Colors.WARM_ACCENT};
   }
 `;
 
@@ -105,17 +108,20 @@ export const ResumeBtnLink = styled(LinkRouter)`
   white-space: nowrap;
   padding: 10px 22px;
   color: ${Colors.SECONDARY_BG};
-  font-size: 16px;
+  font-size: 18px;
+  font-family: Lekton;
   outline: none;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 50px;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: ${Colors.COOL_ACCENT};
+    transition: all 0.3s ease-in-out;
+    padding: 12px 24px;
+    // background: ${Colors.COOL_ACCENT};
     color: ${Colors.WHITE};
+    font-weight: bold;
   }
 `;
