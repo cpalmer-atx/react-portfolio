@@ -45,7 +45,7 @@ export const JumbotronBg = styled.div`
   overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
+export const VideoBg = styled.img`
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -55,8 +55,8 @@ export const VideoBg = styled.video`
 
 export const JumbotronContent = styled.div`
   z-index: 3;
-  top: 120px;
-  left: 120px;
+  top: 240px;
+  // left: 120px;
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;
@@ -67,9 +67,10 @@ export const JumbotronContent = styled.div`
 
 export const JumboH1 = styled.h1`
   color: ${Colors.WHITE};
-  font-size: 48px;
+  font-size: 50px;
   font-family: Lekton;
   text-align: center;
+  filter: drop-shadow(4px 5px 3px ${Colors.PRIMARY_BG});
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -82,13 +83,21 @@ export const JumboH1 = styled.h1`
 
 export const JumboLoop = styled.div`
   color: ${Colors.WHITE};
-  font-size: 24px;
+  font-size: 32px;
   font-family: Lekton;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: left;
   margin-top: 20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const JumboBtnWrapper = styled.div`

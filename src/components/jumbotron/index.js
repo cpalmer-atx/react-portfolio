@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import TextLoop from 'react-text-loop';
 import video from '../../videos/video.mp4';
+import image from '../../images/austin-md.jpg';
 import Button from './ButtonElement.js';
 import {
   JumbotronContainer,
@@ -26,8 +27,8 @@ const Jumbotron = () => {
           autoPlay
           loop
           muted
-          src={video}
-          type='video/mp4'
+          src={image}
+          type='image/jpg'
         />
       </JumbotronBg>
 
@@ -35,7 +36,7 @@ const Jumbotron = () => {
         <JumboH1>Hi, I'm Chad.</JumboH1>
         <JumboLoop>
           <TextLoop springConfig={{ stiffness: 50, damping: 50 }}>
-            <span id='loop'>Driven.</span>
+            <span>Driven.</span>
             <span>Committed.</span>
             <span>Reliable.</span>
             <span>Local.</span>
