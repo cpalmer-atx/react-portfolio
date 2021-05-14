@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Jumbotron from '../components/jumbotron';
 import Navbar from '../components/navbar';
 import NavMenu from '../components/navMenu';
 
@@ -10,6 +11,7 @@ const Home = () => {
     <>
       <NavMenu open={open} toggle={toggle} />
       <Navbar toggle={toggle} />
+      <Jumbotron />
     </>
   )
 }
