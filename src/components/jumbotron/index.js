@@ -35,14 +35,14 @@ const Jumbotron = () => {
         <JumboH1>Hi, I'm Chad.</JumboH1>
         <JumboLoop>
           <TextLoop springConfig={{ stiffness: 50, damping: 50 }}>
-            <span>Driven.</span>
+            <span id='loop'>Driven.</span>
             <span>Committed.</span>
             <span>Reliable.</span>
             <span>Local.</span>
           </TextLoop>
         </JumboLoop>
 
-        <JumboBtnWrapper>
+        {/* <JumboBtnWrapper>
           <Button to='contact'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
@@ -51,7 +51,7 @@ const Jumbotron = () => {
           >
             Contact Me {hover ? <Mail /> : <User />}
           </Button>
-        </JumboBtnWrapper>
+        </JumboBtnWrapper> */}
       </JumbotronContent>
     </JumbotronContainer>
   );
