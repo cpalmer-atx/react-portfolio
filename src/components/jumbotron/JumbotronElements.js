@@ -8,7 +8,7 @@ export const JumbotronContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 400px;
   position: relative;
   z-index: 1;
 
@@ -55,14 +55,20 @@ export const VideoBg = styled.img`
 
 export const JumbotronContent = styled.div`
   z-index: 3;
-  top: 240px;
-  // left: 120px;
+  top: 140px;
+  left: 120px;
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
   align-items: left;
+
+  @media screen and (max-width: 768px) {
+    left: 40px;
+  @media screen and (max-width: 768px) {
+    top: 100px;
+    left: 40px;
 `;
 
 export const JumboH1 = styled.h1`

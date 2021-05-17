@@ -17,10 +17,10 @@ const NavMenu = ({ open, toggle }) => {
       </Icon>
       <NavMenuWrapper>
         <NavMenuLinks>
-          <NavMenuLink to="education" onClick={toggle}>Education</NavMenuLink>
+          <NavMenuLink to="bio" onClick={toggle}>Bio</NavMenuLink>
+          <NavMenuLink to="tech" onClick={toggle}>Technologies</NavMenuLink>
           <NavMenuLink to="projects" onClick={toggle}>Projects</NavMenuLink>
-          <NavMenuLink to="work-history" onClick={toggle}>Work History</NavMenuLink>
-          <NavMenuLink to="about" onClick={toggle}>About Me</NavMenuLink>
+          <NavMenuLink to="edu" onClick={toggle}>Education</NavMenuLink>
         </NavMenuLinks>
         <ResumeBtnWrap>
           <NavMenuRoute to="#">PDF Resume</NavMenuRoute>
