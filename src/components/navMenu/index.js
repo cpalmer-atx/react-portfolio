@@ -20,7 +20,7 @@ const NavMenu = ({ open, toggle }) => {
           <NavMenuLink to="bio" onClick={toggle}>Bio</NavMenuLink>
           <NavMenuLink to="tech" onClick={toggle}>Technologies</NavMenuLink>
           <NavMenuLink to="projects" onClick={toggle}>Projects</NavMenuLink>
-          <NavMenuLink to="edu" onClick={toggle}>Education</NavMenuLink>
+          <NavMenuLink to="edu" onClick={toggle}>Contact</NavMenuLink>
         </NavMenuLinks>
         <ResumeBtnWrap>
           <NavMenuRoute to="#">PDF Resume</NavMenuRoute>
