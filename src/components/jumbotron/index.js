@@ -1,8 +1,5 @@
-import { useState } from 'react';
 import TextLoop from 'react-text-loop';
-import video from '../../videos/video.mp4';
 import image from '../../images/austin-md.jpg';
-import Button from './ButtonElement.js';
 import {
   JumbotronContainer,
   JumbotronBg,
@@ -10,16 +7,9 @@ import {
   JumbotronContent,
   JumboH1,
   JumboLoop,
-  JumboBtnWrapper,
-  Mail,
-  User
 } from './JumbotronElements.js';
 
 const Jumbotron = () => {
-
-  const[hover, setHover] = useState(false);
-  const onHover = () => { setHover(!hover) }
-
   return (
     <JumbotronContainer id='home'>
       <JumbotronBg>
@@ -31,7 +21,6 @@ const Jumbotron = () => {
           type='image/jpg'
         />
       </JumbotronBg>
-
       <JumbotronContent>
         <JumboH1>Hi, I'm Chad.</JumboH1>
         <JumboLoop>
@@ -42,17 +31,6 @@ const Jumbotron = () => {
             <span>Local.</span>
           </TextLoop>
         </JumboLoop>
-
-        {/* <JumboBtnWrapper>
-          <Button to='contact'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
-          >
-            Contact Me {hover ? <Mail /> : <User />}
-          </Button>
-        </JumboBtnWrapper> */}
       </JumbotronContent>
     </JumbotronContainer>
   );
