@@ -11,18 +11,26 @@ import {
   ResumeBtnLink
 } from './NavbarElements';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, toTop }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>cpalmer-atx</NavLogo>
-          <MobileIcon onClick={toggle}>
+          <NavLogo to='/' onClick={toTop}>cpalmer-atx</NavLogo>
+          <MobileIcon >
             <FaBars />
           </MobileIcon>
           <NavItems>
             <NavItem>
-              <NavLinks to='#'>Bio</NavLinks>
+              <NavLinks 
+                to='bio' 
+                activeClass="active" 
+                spy={true} 
+                smooth={true} 
+                offset={-20} 
+                duration={800}
+                >Bio
+              </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to='#'>Technologies</NavLinks>

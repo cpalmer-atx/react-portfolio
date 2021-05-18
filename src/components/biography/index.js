@@ -3,19 +3,22 @@ import {
   BioWrapper,
   BioRow,
   BioCol1,
-  BioCol2
+  BioCol2,
+  BioHeading,
+  BioContent,
+  bioText
 } from './BioElements.js';
 
 const Biography = () => {
   return (
-    <BioContainer>
+    <BioContainer id='bio'>
       <BioWrapper>
         <BioRow>
-          <BioCol1>
-            <h1>Reserved for Section title</h1>
+          <BioCol1> 
+            <BioHeading>Biography</BioHeading>
           </BioCol1>
           <BioCol2>
-            <p>Reserved for Section content</p>
+            <BioContent>{bioText}</BioContent>
           </BioCol2>
         </BioRow>
       </BioWrapper>

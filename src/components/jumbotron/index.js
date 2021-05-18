@@ -11,7 +11,7 @@ import {
 
 const Jumbotron = () => {
   return (
-    <JumbotronContainer id='home'>
+    <JumbotronContainer>
       <JumbotronBg>
         <VideoBg
           autoPlay
