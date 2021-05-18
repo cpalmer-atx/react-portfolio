@@ -17,7 +17,7 @@ const Navbar = ({ toggle, toTop }) => {
       <Nav>
         <NavbarContainer>
           <NavLogo to='/' onClick={toTop}>cpalmer-atx</NavLogo>
-          <MobileIcon >
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavItems>
