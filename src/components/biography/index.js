@@ -1,3 +1,4 @@
+import { BiUser } from "react-icons/bi";
 import {
   BioContainer,
   BioWrapper,
@@ -16,6 +17,10 @@ const Biography = () => {
         <BioRow>
           <BioCol1> 
             <BioHeading>Biography</BioHeading>
+            <BiUser 
+              className="userIcon"
+              size="5rem"
+              ></BiUser>
           </BioCol1>
           <BioCol2>
             <BioContent>{bioText}</BioContent>
