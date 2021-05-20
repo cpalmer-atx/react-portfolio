@@ -4,6 +4,7 @@ import Biography from '../components/biography';
 import Jumbotron from '../components/jumbotron';
 import Navbar from '../components/navbar';
 import NavMenu from '../components/navMenu';
+import Technologies from '../components/technologies';
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -25,6 +26,7 @@ const Home = () => {
       <Navbar toggle={toggle} toTop={toTop} />
       <Jumbotron />
       <Biography />
+      <Technologies />
     </>
   )
 }
