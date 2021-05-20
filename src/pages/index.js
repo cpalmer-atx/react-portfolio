@@ -4,6 +4,7 @@ import Biography from '../components/biography';
 import Jumbotron from '../components/jumbotron';
 import Navbar from '../components/navbar';
 import NavMenu from '../components/navMenu';
+import Projects from '../components/projects';
 import Technologies from '../components/technologies';
 
 const Home = () => {
@@ -25,8 +26,9 @@ const Home = () => {
       <NavMenu open={open} toggle={toggle}  />
       <Navbar toggle={toggle} toTop={toTop} />
       <Jumbotron />
-      <Biography />
       <Technologies />
+      <Biography />
+      <Projects />
     </>
   )
 }
