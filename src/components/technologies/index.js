@@ -1,4 +1,3 @@
-import { BiUser } from "react-icons/bi";
 import TechIcons from './TechIcons.js';
 import {
   TechContainer,
@@ -27,25 +26,5 @@ const Technologies = () => {
     </TechContainer>
   );
 }
-// const Technologies = () => {
-//   return (
-//     <TechContainer>
-//       <TechWrapper>
-//         <TechRow>
-//           <TechCol1> 
-//             <TechHeading>Technologies</TechHeading>
-//               <BiUser 
-//                 className="userIcon"
-//                 size="5rem"
-//                 ></BiUser>
-//           </TechCol1>
-//           <TechCol2>
-//             <TechContent>yada yada yada</TechContent>
-//           </TechCol2>
-//         </TechRow>
-//       </TechWrapper>
-//     </TechContainer>
-//   );
-// }
 
 export default Technologies;

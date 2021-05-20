@@ -23,7 +23,7 @@ const Projects = () => {
         <ProjectsCard>
           <ProjectsIcon src={icon2} />
           <ProjectsH2>Chuckles</ProjectsH2>
-          <ProjectsP>A full CRUD application that retrieves Chuck Norris jokes from a 3rd party API or simple database.</ProjectsP>
+          <ProjectsP>A full CRUD application that retrieves Chuck Norris jokes from chucknorris.io API.</ProjectsP>
         </ProjectsCard>
       </ProjectsWrapper>
     </ProjectsContainer>
